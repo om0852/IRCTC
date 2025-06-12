@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class UserBookingService {
-    private User user;
+    private User user=null;
     private ObjectMapper objectMapper = new ObjectMapper();
     private List<User> userList = new ArrayList<>();
     private static final String USER_PATH = "app/src/main/java/localDb/users.json";
@@ -23,6 +23,7 @@ public class UserBookingService {
 
     public UserBookingService() throws IOException {
         userList = loadUsers();
+        this.user=null;
     }
 
     private List<User> loadUsers() throws IOException {
@@ -30,11 +31,20 @@ public class UserBookingService {
         if (!users.exists()) return new ArrayList<>();
         return objectMapper.readValue(users, new TypeReference<List<User>>() {});
     }
+  public User fetchLogedUser(){
+        if(this.user!=null){
+        return this.user;
+        }
+        else{
+            System.out.println("Login first....");
+            return null;
+        }
 
+  }
     public Boolean loginUser() {
         Optional<User> foundUser = userList.stream().filter(user1 ->
                 user1.getName().equals(user.getName()) &&
-                        UserServiceUtil.checkPassword(user.getPassword(), user1.getPassword())
+                        UserServiceUtil.checkPassword(user.getPassword(), user1.getHashedPassword())
         ).findFirst();
         return foundUser.isPresent();
     }

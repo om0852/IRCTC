@@ -20,8 +20,12 @@ public class TrainService {
         if (!users.exists()) return new ArrayList<>();
         return objectMapper.readValue(users, new TypeReference<List<Train>>() {});
     }
-    private List<Train> trainList = new ArrayList<>(); // Should be loaded from file/db
+    private List<Train> trainList = new ArrayList<>();
+    // Should be loade d from file/db
+public TrainService() throws IOException{
+    trainList =loadUsers();
 
+}
     public List<Train> searchTrains(String source, String destination) {
         return trainList.stream()
                 .filter(train -> validTrain(train, source, destination))
@@ -30,9 +34,9 @@ public class TrainService {
 
     private boolean validTrain(Train train, String source, String destination) {
         List<String> stationOrder = train.getStations();
-        int sourceIndex = stationOrder.indexOf(source.toLowerCase());
-        int destinationIndex = stationOrder.indexOf(destination.toLowerCase());
-
+        int sourceIndex = stationOrder.indexOf(source);
+        int destinationIndex = stationOrder.indexOf(destination);
+        System.out.println(sourceIndex+" "+destinationIndex);
         return sourceIndex != -1 && destinationIndex != -1 && sourceIndex < destinationIndex;
     }
 }

@@ -1,5 +1,6 @@
 package org.example;
 
+import entities.Ticket;
 import entities.User;
 import services.UserBookingService;
 import utils.UserServiceUtil;
@@ -61,7 +62,7 @@ public class App {
                         else
                             System.out.println("Invalid credentials");
                     } catch (IOException e) {
-                        System.out.println("Error loading user data");
+                        System.out.println("Error loading user data"+e.getMessage());
                     }
                     break;
                 }
@@ -90,6 +91,32 @@ public class App {
                         if (selectedIndex >= 1 && selectedIndex <= trains.size()) {
                             trainSelectedForBooking = trains.get(selectedIndex - 1);
                             System.out.println("Train selected: " + trainSelectedForBooking.getTrainId());
+                            System.out.println("Select Seat No:");
+                            List<List <Integer>> seats =trains.get(selectedIndex-1).getSeats();
+                            for (int i=0;i<seats.size();i++){
+                                for(int j=0;j<seats.get(i).size();j++){
+                                    System.out.print(seats.get(i).get(j)+" ");
+                                }
+                                System.out.println("");
+                            }
+                            System.out.println("Enter Seat No:");
+                            int seatNo = scanner.nextInt();
+                            try{
+
+                                int row = (seatNo - 1) / 5;
+                                int col = (seatNo - 1) % 5;
+                                if(seats.get(row).get(col)==0){
+                                selectedIndex--;
+                                User user = userBookingService.fetchLogedUser();
+                                Ticket ticket = new Ticket(trains.get(selectedIndex).getTrainId(),user.getUserId(),source,destination,"2:3:40",trains.get(selectedIndex));
+                                user.getTicketsBooked().add(ticket);
+                                user.setTicketsBooked(user.getTicketsBooked());
+                                System.out.println("seat book successfully");
+                               List<User> users = userBookingService.l
+                            }
+                            }catch (Exception e){
+                                System.out.println(e.getMessage());
+                            }
                         }
                     }
                     break;
