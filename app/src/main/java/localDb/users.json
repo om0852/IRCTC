@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Om Salunke",
+    "password": null,
+    "hashed_password": "123456",
+    "tickets_booked": [
+      {
+        "source": "Malegaon",
+        "destination": "Delhi",
+        "train": {
+          "seats": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "stations": [
+            "Malegaon",
+            "Nashik",
+            "Bhopal",
+            "Agra",
+            "Delhi"
+          ],
+          "trainInfo": "Train ID:bcd123 Tain No 12345",
+          "train_id": "bcd123",
+          "train_no": "12345",
+          "station_times": {
+            "Malegaon": "10:00:00",
+            "Nashik": "11:15:00",
+            "Bhopal": "16:30:00",
+            "Agra": "20:45:00",
+            "Delhi": "23:30:00"
+          }
+        },
+        "ticketInfo": "Ticket ID: null belongs to user null from Malegaon to Delhi on Sat Dec 09 00:00:00 IST 2023",
+        "ticket_id": null,
+        "user_id": null,
+        "date_of_travel": 1702060200000
+      }
+    ],
+    "user_id": "abcde"
+  },
+  {
+    "name": "om",
+    "password": "1234",
+    "hashed_password": "$2a$10$k7WRBAKPUl4mn7dcEtU0EuAJGu1pK5epZKsYc2WLn16H05Zo0PSfm",
+    "tickets_booked": [],
+    "user_id": "6c137318-36ec-4650-9390-80c82b66841a"
+  }
+]

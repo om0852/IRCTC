@@ -1,0 +1,152 @@
+[
+  {
+    "train_id": "Chennai Express",
+    "train_no": 4567,
+    "seats": [
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0]
+    ],
+    "station_times": {
+      "Malegaon": "10:00:00",
+      "Nashik": "11:15:00",
+      "Bhopal": "16:30:00",
+      "Agra": "20:45:00",
+      "Delhi": "23:30:00"
+    },
+    "stations": [
+      "Malegaon",
+      "Nashik",
+      "Bhopal",
+      "Agra",
+      "Delhi"
+    ]
+  },
+  {
+    "train_id": "Mumbai Rajdhani",
+    "train_no": 1234,
+    "seats": [
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0]
+    ],
+    "station_times": {
+      "Mumbai": "08:00:00",
+      "Surat": "10:30:00",
+      "Vadodara": "12:45:00",
+      "Jaipur": "18:20:00",
+      "Delhi": "21:00:00"
+    },
+    "stations": [
+      "Mumbai",
+      "Surat",
+      "Vadodara",
+      "Jaipur",
+      "Delhi"
+    ]
+  },
+  {
+    "train_id": "Howrah Mail",
+    "train_no": 2345,
+    "seats": [
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0]
+    ],
+    "station_times": {
+      "Kolkata": "06:00:00",
+      "Asansol": "08:00:00",
+      "Gaya": "11:30:00",
+      "Varanasi": "15:00:00",
+      "Lucknow": "19:45:00"
+    },
+    "stations": [
+      "Kolkata",
+      "Asansol",
+      "Gaya",
+      "Varanasi",
+      "Lucknow"
+    ]
+  },
+  {
+    "train_id": "Bangalore Duronto",
+    "train_no": 3456,
+    "seats": [
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0]
+    ],
+    "station_times": {
+      "Bangalore": "07:15:00",
+      "Tumkur": "08:10:00",
+      "Hubli": "12:00:00",
+      "Pune": "18:00:00",
+      "Mumbai": "22:30:00"
+    },
+    "stations": [
+      "Bangalore",
+      "Tumkur",
+      "Hubli",
+      "Pune",
+      "Mumbai"
+    ]
+  },
+  {
+    "train_id": "Kerala Express",
+    "train_no": 5678,
+    "seats": [
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0]
+    ],
+    "station_times": {
+      "Thiruvananthapuram": "05:30:00",
+      "Kochi": "07:45:00",
+      "Coimbatore": "12:15:00",
+      "Chennai": "18:40:00",
+      "Vijayawada": "22:10:00"
+    },
+    "stations": [
+      "Thiruvananthapuram",
+      "Kochi",
+      "Coimbatore",
+      "Chennai",
+      "Vijayawada"
+    ]
+  },
+  {
+    "train_id": "Punjab Mail",
+    "train_no": 6789,
+    "seats": [
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0],
+      [0,0,0,0,0]
+    ],
+    "station_times": {
+      "Amritsar": "06:00:00",
+      "Ludhiana": "08:30:00",
+      "Ambala": "10:45:00",
+      "Delhi": "14:00:00",
+      "Gwalior": "18:30:00"
+    },
+    "stations": [
+      "Amritsar",
+      "Ludhiana",
+      "Ambala",
+      "Delhi",
+      "Gwalior"
+    ]
+  }
+]
