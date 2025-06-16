@@ -112,7 +112,7 @@ public class App {
                                 user.getTicketsBooked().add(ticket);
                                 user.setTicketsBooked(user.getTicketsBooked());
                                 System.out.println("seat book successfully");
-                               List<User> users = userBookingService.l
+//                               List<User> users = userBookingService.l
                             }
                             }catch (Exception e){
                                 System.out.println(e.getMessage());
